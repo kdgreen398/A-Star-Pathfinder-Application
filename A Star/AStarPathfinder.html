@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/AStar_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onmousedown="setMouseDown()" onmouseup="setMouseUp()">
+    
+    <h2 id="message">A* Pathfinder</h2>
+    <div id="grid"></div>
+    
+    <div class="controls">
+        <button onclick="changeMode('start')">START</button>
+        <button onclick="changeMode('end')">END</button>
+        <button onclick="changeMode('wall')">WALL</button>
+        <button onclick="resetGrid()">CLEAR</button>
+    </div>
+    <script src="/pathfinder_script.js"></script>
+
+</body>
+</html>
